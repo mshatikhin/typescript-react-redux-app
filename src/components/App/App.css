@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-family: "Segoe UI", "Helvetica Neue", "Helvetica", "PT Astra Sans", "Arial", FreeSans, sans-serif;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+}
+
+.App__root {
+    max-width: 1200px;
+    margin: auto;
+    box-sizing: border-box;
+}
