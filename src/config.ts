@@ -1,0 +1,1 @@
+export const FLICKR_API_KEY = '1173960c94df6700f0b57dccc50f0925';

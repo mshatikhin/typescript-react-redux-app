@@ -1,0 +1,10 @@
+.root {
+  display: block;
+  font-size: 56px;
+  text-align: center;
+  padding: 130px 0 70px;
+  line-height: 1.07143;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  color: #604d8c;
+}

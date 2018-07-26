@@ -1,0 +1,7 @@
+.image {
+  display: block;
+  width: 320px;
+  height: 320px;
+  background: #ddd no-repeat center;
+  background-size: cover;
+}

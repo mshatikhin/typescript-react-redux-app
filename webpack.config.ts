@@ -1,5 +1,5 @@
-const path = require('path');
 import webpack, { NewUseRule } from 'webpack';
+import * as path from 'path';
 import * as HtmlWebpackPlugin from 'html-webpack-plugin';
 import * as Clean from 'clean-webpack-plugin';
 
@@ -11,8 +11,26 @@ const rules: NewUseRule[] = [
   },
   {
     test: /\.css$/,
+    exclude: /node_modules/,
+    enforce: 'pre',
+    use: 'typed-css-modules-loader'
+  },
+  {
+    test: /\.css$/,
     use: ['style-loader', 'css-loader'],
-    exclude: /node_modules/
+    include: /react-ui/
+  },
+  {
+    test: /\.css$/,
+    use: [
+      'style-loader',
+      'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]'
+    ],
+    exclude: /react-ui/
+  },
+  {
+    test: /\.(png|jpg|svg|woff|woff2|eot)$/,
+    use: 'file-loader'
   }
 ];
 
@@ -41,7 +59,7 @@ const config: webpack.Configuration = {
     extensions: ['.tsx', '.ts', '.js']
   },
   module: {
-    rules: rules
+    rules
   },
   plugins
 };

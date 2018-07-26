@@ -1,4 +1,14 @@
 {
-  "extends": ["tslint:latest", "tslint-react"],
-  "exclude": ["node_modules", "public"]
+  "extends": ["tslint:latest", "tslint-react", "tslint-config-prettier"],
+  "exclude": ["node_modules", "typings", "dist"],
+  "rules": {
+    "interface-name": false,
+    "no-submodule-imports": false,
+    "object-literal-sort-keys": false,
+    "no-implicit-dependencies": [true, "dev"],
+    "no-object-literal-type-assertion": false,
+    "no-default-export": true,
+    "no-unused-expression": false,
+    "jsx-key": false
+  }
 }

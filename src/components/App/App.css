@@ -1,15 +1,18 @@
-body{
-    margin: 0;
-    padding: 0;
-    color: #333;
-    font-family: "Segoe UI", "Helvetica Neue", "Helvetica", "PT Astra Sans", "Arial", FreeSans, sans-serif;
-    font-size: 14px;
-    -webkit-font-smoothing: antialiased;
-    line-height: 1.5;
+body {
+  background: #fafafa;
+  margin: 0;
+  padding: 0;
+  color: #111;
+  font-family: 'Segoe UI', 'Helvetica Neue', 'Helvetica', 'PT Astra Sans', 'Arial', FreeSans,
+    sans-serif;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
 }
 
-.App__root {
-    max-width: 1200px;
-    margin: auto;
-    box-sizing: border-box;
+.root {
+  min-width: 800px;
+  max-width: 1200px;
+  margin: auto;
+  box-sizing: border-box;
+  text-align: center;
 }
